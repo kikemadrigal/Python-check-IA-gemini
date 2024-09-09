@@ -11,5 +11,5 @@ Es un programa que se conecta a la IA de google para pasarle una imagen y que te
 2. Ve a https://ai.google.dev/ y crea una API Key, sustituye la que hay en el archivo key.py por esa.
 
 3. Para crear el ejecutable escribe en el cmd: 
-python -m PyInstaller --windowed --onefile --icon=logo.ico --clean -y -n "gemini-kike" main.py
+python -m PyInstaller --windowed --onefile --icon=logo.ico --splash splash.png --hidden-import=pyi_splash --clean -y -n "gemini-kike"  .\main.py
 

@@ -1,17 +1,25 @@
 #la librería tkinter viene preinstalada en python y no hay que instalarla
 from tkinter import Tk, Label, Button, Text, Frame, Listbox, ttk
-#from tkinter.filedialog import askopenfile
 from tkinter.messagebox import showinfo
 #PIL significa biblioteca de imagenes de Python
 #usa PIL para manipular imagenes, colores, agregar texto, cambiar tamaño, etc
 from PIL import Image, ImageTk
+#para listar los archivos del directorio images
 import os
 from askGemini import ask
+#para bajar las fotos de internet
 import requests
 from io import BytesIO
 
-
-
+try:
+    import pyi_splash
+    pyi_splash.update_text('UI Loaded ...')
+    pyi_splash.close()
+except:
+    pass
+#import sys
+#if getattr(sys, 'frozen', False):
+#    import pyi_splash 
 
 
 
@@ -38,7 +46,7 @@ def createWindow():
             img.save(directorio+"/planta"+str(i)+".jpg")
  
 
-    _Font = ("Arial", 14)
+    #_Font = ("Arial", 14)
     listBox=Listbox(window, bg="#f7ffde")
     listBox.bind('<<ListboxSelect>>', lambda e: submit(listBox, labelImage))
     labelImage=Label(window, text="Select image")

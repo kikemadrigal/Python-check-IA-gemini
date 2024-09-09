@@ -1,3 +1,4 @@
 key.py
 build/
 __pycache__
+*.spec
