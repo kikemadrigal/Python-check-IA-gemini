@@ -4,6 +4,8 @@ Es un programa que se conecta a la IA de google para pasarle una imagen y que te
 
 <img src="docs/image1.JPG" width="300" />
 
+descarga el programa <a href="https://github.com/kikemadrigal/Python-check-IA-gemini/releases/download/v0.0.1/gemini-kike.zip">Pinchando aquí</a>
+
 # Development
 
 1. Escribe en el cmd: pip install requirements.txt
